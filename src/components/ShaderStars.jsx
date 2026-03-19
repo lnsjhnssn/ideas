@@ -6,6 +6,7 @@ export default function ShaderStars() {
       style={{
         position: "relative",
         width: "100%",
+        background: "#05070d",
         minHeight: "100vh",
         overflow: "hidden",
       }}
@@ -25,11 +26,11 @@ export default function ShaderStars() {
           }}
         >
           <FloatingParticles
-            angleVariance={17}
-            count={2}
-            particleColor="#999"
-            particleSize={1.1}
-            particleSoftness={0.2}
+            angleVariance={12}
+            count={16}
+            particleColor="#f8faff"
+            particleSize={1.35}
+            particleSoftness={0.45}
             randomness={0.7}
             speed={0}
             speedVariance={0.2}
@@ -58,7 +59,7 @@ export default function ShaderStars() {
             margin: 0,
           }}
         >
-          Shaders
+          ShaderStars
         </h1>
       </div>
     </section>

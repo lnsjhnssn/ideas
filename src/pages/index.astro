@@ -1,8 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ShaderStars from "../components/ShaderStars.jsx";
+import BlurBackground from "../components/BlurBackground.astro";
+import ShaderPixels from "../components/ShaderPixels.jsx";
 ---
 
 <Layout>
-  <ShaderStars client:only="react" />
+  <section class="blur-background">
+    <BlurBackground />
+  </section>
+  <ShaderStars client:load />
+  <section class="shader-pixels"><ShaderPixels client:load /></section>
 </Layout>
+
+<style>
+  .blur-background {
+    height: 100vh;
+  }
+  .shader-pixels {
+    height: 100vh;
+  }
+</style>
