@@ -21,8 +21,8 @@ export default function ShaderPixels() {
         }}
       >
         <Dither
-          colorA="#031b2b"
-          colorB="#66fff8"
+          colorA="#0a4478"
+          colorB="#74c7ef"
           pattern="bayer8"
           pixelSize={7}
           threshold={0.41}
