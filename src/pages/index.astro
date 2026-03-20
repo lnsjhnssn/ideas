@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import ShaderStars from "../components/ShaderStars.jsx";
 import BlurBackground from "../components/BlurBackground.astro";
 import ShaderPixels from "../components/ShaderPixels.jsx";
+import DriftingLights from "../components/DriftingLights.jsx";
 ---
 
 <Layout>
@@ -11,6 +12,7 @@ import ShaderPixels from "../components/ShaderPixels.jsx";
   </section>
   <ShaderStars client:load />
   <section class="shader-pixels"><ShaderPixels client:load /></section>
+  <section class="drifting-lights"><DriftingLights client:load /></section>
 </Layout>
 
 <style>
